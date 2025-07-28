@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="script/contact.js" defer></script>
+</head>
+
+<body>
+<nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="navbar-logo">Auto-cars</h1>
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <main>
+
+        <form id="contact-form">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required  placeholder="Entrez votre Nom"/>
+            <div id="erreur-nom" class="error"></div>
+
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required  placeholder="Entrez votre Prenom"/>
+            <div id="erreur-email" class="error"></div>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Laiser un Message...."></textarea>
+            <div id="erreur-message" class="error"></div>
+
+            <button type="submit">Envoyer</button>
+
+            <div class="message" id="confirmation-message">
+                Merci pour votre message ! Nous vous répondrons bientôt.
+            </div>
+        </form>
+
+        <a href="index.html" class="back-link">← Retour à l’accueil</a>
+    </main>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>

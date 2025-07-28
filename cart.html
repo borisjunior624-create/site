@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .actions {
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Votre Panier</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produit</th>
+      <th>Quantité</th>
+      <th>Prix Unitaire</th>
+      <th>Total</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody id="contenuPanier"></tbody>
+</table>
+
+<div class="actions">
+  <p id="totalGeneral">Total général : 0.00 €</p>
+  <button onclick="viderPanier()">Vider le panier</button>
+  <button onclick="commander()">Commander</button>
+  <br><br>
+  <a href="products.html">← Retour aux produits</a>
+</div>
+
+<script>
+  let panier = JSON.parse(localStorage.getItem("panier")) || [];
+
+  function afficherPanier() {
+    const tbody = document.getElementById("contenuPanier");
+    tbody.innerHTML = "";
+    let total = 0;
+
+    panier.forEach((item, index) => {
+      const totalProduit = item.quantite * item.price;
+      total += totalProduit;
+
+      const tr = document.createElement("tr");
+      tr.innerHTML = `
+        <td>${item.name}</td>
+        <td>${item.quantite}</td>
+        <td>${item.price.toFixed(2)} €</td>
+        <td>${totalProduit.toFixed(2)} €</td>
+        <td><button onclick="retirer(${index})">Retirer</button></td>
+      `;
+      tbody.appendChild(tr);
+    });
+
+    document.getElementById("totalGeneral").innerText = `Total général : ${total.toFixed(2)} €`;
+  }
+
+  function retirer(index) {
+    panier.splice(index, 1);
+    localStorage.setItem("panier", JSON.stringify(panier));
+    afficherPanier();
+  }
+
+  function viderPanier() {
+    panier = [];
+    localStorage.removeItem("panier");
+    afficherPanier();
+  }
+
+  function commander() {
+    if (panier.length === 0) {
+      alert("Votre panier est vide !");
+    } else {
+      alert("Commande simulée !");
+      viderPanier();
+    }
+  }
+
+  afficherPanier();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "name": "Smartphone XYZ",
+        "categorie": "Apareil électronique",
+        "price": 499.99,
+        "stock": 50,
+        "description": "Smartphone dernière génération avec appareil photo 48MP",
+        "image": "images/iphone 1.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 2,
+        "name": "Ordinateur Portable Pro",
+        "categorie": "Vetement",
+        "price": 899.99,
+        "stock": 30,
+        "description": "Ordinateur portable avec processeur i7 et 16GB RAM",
+        "image": "images/latptop.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 3,
+        "name": "Casque Audio Sans Fil",
+        "categorie": "Apareil electonique",
+        "price": 149.99,
+        "stock": 100,
+        "description": "Casque bluetooth avec réduction de bruit active",
+        "image": "images/casque-removebg-preview.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 4,
+        "name": "Tablette Graphique",
+        "categorie": "Vetement",
+        "price": 299.99,
+        "stock": 25,
+        "description": "Tablette graphique pour artistes professionnels",
+        "image": "images/tablet1.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 5,
+        "name": "T-shirt Basique",
+        "categorie": "Vetements",
+        "price": 19.99,
+        "stock": 200,
+        "description": "T-shirt en coton bio disponible en plusieurs tailles",
+        "image": "images/T-shirt Basique.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 6,
+        "name": "Chaussures de Sport",
+        "categorie": "Vetements",
+        "price": 79.99,
+        "stock": 50,
+        "description": "Chaussures de sport légères et confortables",
+        "image": "images/Chaussures_de_Sport-removebg-preview (2).png",
+        "numberCommande": 1
+    },
+    {
+        "id": 7,
+        "name": "Mixer Blender",
+        "categorie": "Cuisine",
+        "price": 59.99,
+        "stock": 80,
+        "description": "Blender avec différentes vitesses et lames en acier inoxydable",
+        "image": "images/Mixer_Blender.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 8,
+        "name": "Roman \"Le Petit Prince\"",
+        "categorie": "Livres",
+        "price": 9.99,
+        "stock": 120,
+        "description": "Le célèbre roman pour enfants et adultes de Saint-Exupéry",
+        "image": "images/Livres.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 9,
+        "name": "Montre Connectée",
+        "categorie": "Technologie",
+        "price": 199.99,
+        "stock": 35,
+        "description": "Montre connectée avec suivi de santé et notifications",
+        "image": "images/Montre Connectée.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 10,
+        "name": "Sac à Dos Étanche",
+        "categorie": "Accessoires",
+        "price": 49.99,
+        "stock": 60,
+        "description": "Sac à dos résistant à l'eau, idéal pour les randonnées",
+        "image": "images/Sac à Dos Étanche.jpg",
+        "numberCommande": 1
+    },
+    {
+        "id": 11,
+        "name": "Bouteille Isotherme",
+        "categorie": "Accessoires",
+        "price": 24.99,
+        "stock": 150,
+        "description": "Bouteille en inox qui garde vos boissons chaudes ou froides",
+        "image": "images/Bouteille_Isotherme-removebg-preview.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 12,
+        "name": "Jeu de Société",
+        "categorie": "Loisirs",
+        "price": 39.99,
+        "stock": 40,
+        "description": "Jeu de société amusant pour toute la famille",
+        "image": "images/Jeu de Société.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 13,
+        "name": "Tapis de Yoga",
+        "categorie": "Sport",
+        "price": 29.99,
+        "stock": 100,
+        "description": "images/Tapis antidérapant idéal pour le yoga et le pilates",
+        "image": "images/Tapis de Yoga.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 14,
+        "name": "Lampe de Bureau LED",
+        "categorie": "Maison",
+        "price": 34.99,
+        "stock": 75,
+        "description": "images/Lampe LED avec réglage de luminosité et design moderne",
+        "image": "images/lampe-bureau.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 15,
+        "name": "Pack de Stylos Gel",
+        "categorie": "Fournitures de Bureau",
+        "price": 12.99,
+        "stock": 200,
+        "description": "Pack de stylos gel à encre fluide, disponible en plusieurs couleurs",
+        "image": "images/Pack de Stylos Gel.png",
+        "numberCommande": 1
+    },
+    {
+        "id": 16,
+        "name": "Caméra de Surveillance",
+        "categorie": "Sécurité",
+        "price": 89.99,
+        "stock": 20,
+        "description": "Caméra de surveillance avec vision nocturne et détection de mouvement",
+        "image": "images/Caméra.png",
+        "numberCommande": 1
+    }
+]

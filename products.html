@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Produits</title>
+  <link rel="stylesheet" href="./style/products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <script src="script/produits.js"></script>
+  <script src="script/app.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">Auto-car</a>
+        <button class="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Produts</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i><span id="panierCompteur">0</span></a>
+        </ul>
+    </div>
+</nav>
+
+
+  <h1>Nos Produits</h1>
+
+  <label for="filtre">Filtrer par catégorie :</label>
+  <select id="filtre">
+    <option value="tous">-- Toutes les catégories --</option>
+  </select>
+
+
+  <div id="listeProduits"></div>
+
+</body>
+
+</html>
